@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option go_package = "../grpc-test/proto;proto";
+
+message KeywordsData {
+    repeated string keyword=1;
+}
+
+message Input {
+
+}
+
+service Keywords {
+    rpc StreamingKeyword (Input) returns (stream KeywordsData) {}
+}
