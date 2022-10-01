@@ -7,7 +7,7 @@ message KeywordsData {
 }
 
 message Input {
-
+    int64 size=1;
 }
 
 service Keywords {
